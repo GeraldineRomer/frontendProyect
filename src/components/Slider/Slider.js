@@ -9,6 +9,7 @@ import Typography from '@mui/material/Typography';
 import { Fab } from '@mui/material';
 import { Add, Star } from '@mui/icons-material';
 import { useFavorites } from '../FavoriteList/FavoriteList';
+import { useAdds } from '../AddList/AddList';
 
 const style = {
     position: 'fixed',
@@ -54,10 +55,17 @@ const SliderComponent = ({ noticias }) => {
     };
 
     const { addFavorite } = useFavorites();
+    const { addAdd } = useAdds();
 
-    const handleAddToFavorite = (noticeID) => {
-        if (noticeID) {
-            addFavorite(noticeID); // Agregar el ID a la lista de favoritos a través del contexto
+    const handleAddToFavorite = (notice) => {
+        if (notice) {
+            addFavorite(notice); // Agregar el ID a la lista de favoritos a través del contexto
+        }
+    };
+
+    const handleAddToAdd = (notice) => {
+        if (notice) {
+            addAdd(notice); // Agregar el ID a la lista de favoritos a través del contexto
         }
     };
 
@@ -101,10 +109,10 @@ const SliderComponent = ({ noticias }) => {
                     {selectedNotice.description}
                 </Typography>
                     <div className="button-fav-group">
-                        <Fab className="btn-icon" color="" aria-label="Favorite icon" onClick={() => handleAddToFavorite(selectedNotice._id)}>
+                        <Fab className="btn-icon" color="" aria-label="Favorite icon" onClick={() => handleAddToFavorite(selectedNotice)}>
                             <Star/>
                         </Fab>
-                        <Fab className="btn-icon" color="" aria-label="Add icon">
+                        <Fab className="btn-icon" color="" aria-label="Add icon" onClick={() => handleAddToAdd(selectedNotice)}>
                             <Add/>
                         </Fab>
                     </div>

@@ -1,5 +1,5 @@
 .Section2{
-    height: 500px;
+    height: auto;
     width: auto;
     background-color: rgb(77, 174, 238);
     margin: 40px;
@@ -9,31 +9,98 @@
     flex-wrap: wrap;
     justify-content: center;
     .card-favorites{
-        width: 500px;
-        height: 400px;
-        background-color: blueviolet;
-        margin: 30px;
+        width: 1000px;
+        height: auto;
+        background-color: rgb(89, 36, 214);
+       /*  margin: 30px; */
         margin-top: 50px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
         .icon-star{
             margin: 20px;
+            font-size: 50px;
+            color: rgba(182, 165, 221, 0.726);
+            align-items: flex-start;
+            .star{
+                font-size: 70px;
+            }
+        }
+        .card{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            flex-direction: row;
+            .img-list{
+                display: flex;
+                margin-top: 30px;
+                width: 150px;
+                height: 100px;
+                border-radius: 10px;
+            }
+            .info{
+                flex-direction: column;
+                margin-left: 10px;
+                align-items: center;
+                .title{
+                    text-align: left;
+                    color: rgb(204, 191, 235);
+                }
+                .description{
+                    text-align: left;
+                    color: rgb(204, 191, 235);
+                }
+            }
         }
     }
     .card-add{
-        width: 500px;
-        height: 400px;
-        background-color: blueviolet;
-        margin: 30px;
-        border-radius: 10px;
+        width: 1000px;
+        height: auto;
+        background-color: rgb(89, 36, 214);
+       /*  margin: 30px; */
         margin-top: 50px;
+        border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         display: flex;
-        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
         .icon-add{
             margin: 20px;
+            font-size: 50px;
+            color: rgba(182, 165, 221, 0.726);
+            align-items: flex-start;
+            .add {
+                font-size: 70px;
+            }
+        }
+        .card-add2{
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            flex-direction: row;
+            .img-list-add{
+                display: flex;
+                margin-top: 30px;
+                width: 150px;
+                height: 100px;
+                border-radius: 10px;
+            }
+            .info-add{
+                flex-direction: column;
+                margin-left: 10px;
+                align-items: center;
+                .title-add{
+                    text-align: left;
+                    color: rgb(204, 191, 235);
+                }
+                .description-add{
+                    text-align: left;
+                    color: rgb(204, 191, 235);
+                }
+            }
         }
     }
 }
