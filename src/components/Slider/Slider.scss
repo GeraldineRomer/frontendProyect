@@ -5,18 +5,24 @@
     align-items: center;
 
     .images {
-        width: auto;
-        height: 300px;
-        padding-top: 10px ;
+        display: flex;
+        width: 500px;
+        height: 400px;
+        bottom: 60px;
+        position: relative;
+        margin-left: 250px;
     }
-
+    
     .title {
         display: flex;
-        align-items: center;
+        align-items: start;
         justify-content: center;
         margin: 10px;
         font-size: 20px;
         font-weight: bold;
+        position: relative;
+        right: 120px;
+        top: 60px;
     }
 
     .subtitle {
@@ -25,6 +31,9 @@
         justify-content: center;
         margin: 10px;
         font-size: 15px;
+        position: relative;
+        right: 120px;
+        top: 60px;
     }
 
     .conf-button {
@@ -44,6 +53,9 @@
             cursor: pointer;
             border-color: rgb(72, 43, 235);
             border-radius: 10px;
+            position: relative;
+            right: 120px;
+            top: 60px;
         }
     }
 }
@@ -62,8 +74,8 @@ button.slick-arrow.slick-prev::before {
     color: rgb(72, 43, 235);
 }
 
-.slick-dots {
-    bottom: -40px;
+ul.slick-dots {
+    bottom: -50px;
     color: #fff;
 }
 

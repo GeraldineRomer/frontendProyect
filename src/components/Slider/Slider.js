@@ -6,7 +6,7 @@ import './Slider.scss';
 import Modal from '@mui/material/Modal';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
-import { Fab } from '@mui/material';
+import { Fab, Grid } from '@mui/material';
 import { Add, Star } from '@mui/icons-material';
 import { useFavorites } from '../FavoriteList/FavoriteList';
 import { useAdds } from '../AddList/AddList';
@@ -37,8 +37,8 @@ const SliderComponent = ({ noticias }) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        autoplay: false,
+        autoplaySpeed: 4000
     };
 
     const [openModal, setOpenModal] = useState(false);
@@ -71,18 +71,24 @@ const SliderComponent = ({ noticias }) => {
 
     return (
         <div className="slider-container">
-        <Slider {...sliderSettings}>
+        <Slider {...sliderSettings} >
             {noticias.map((noticia, index) => (
-            <div key={index}>
-                <img src={noticia.image} alt={`Imagen ${index + 1}`} className="images" />
-                <label className="title">{noticia.title}</label>
-                <label className="subtitle">{noticia.subtitle}</label>
-                <div className="conf-button">
-                    <button className="button-more" onClick={() => handleOpen(noticia)}>
-                        Ver más
-                    </button>
+                <div key={index}>
+                    <Grid container spacing={0}>
+                        <Grid item xs={6} md={8}>
+                            <img src={noticia.image} alt={`Imagen ${index + 1}`} className="images" />
+                        </Grid>
+                        <Grid item xs={6} md={4}>
+                            <label className="title">{noticia.title}</label>
+                            <label className="subtitle">{noticia.subtitle}</label>
+                            <div className="conf-button">
+                                <button className="button-more" onClick={() => handleOpen(noticia)}>
+                                    Ver más
+                                </button>
+                            </div>
+                        </Grid>
+                    </Grid>
                 </div>
-            </div>
             ))}
         </Slider>
         <Modal
