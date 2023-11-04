@@ -43,7 +43,7 @@
             .info{
                 flex-direction: column;
                 margin-left: 10px;
-                align-items: center;
+                align-items: flex-start;
                 .title{
                     text-align: left;
                     color: rgb(204, 191, 235);
@@ -91,7 +91,7 @@
             .info-add{
                 flex-direction: column;
                 margin-left: 10px;
-                align-items: center;
+                align-items: flex-start;
                 .title-add{
                     text-align: left;
                     color: rgb(204, 191, 235);

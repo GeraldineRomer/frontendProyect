@@ -14,6 +14,10 @@ export const MenuCube = () => {
         items.classList.toggle('open');
         toggle.classList.toggle('close');
     }
+    const login = () => {
+        console.log('Di click en login');
+        window.open('../Login','_self')
+    }
     return (
         <div class="container">
             <div class="menu" id="menu">
@@ -61,6 +65,9 @@ export const MenuCube = () => {
                         </Link>
                     </li>
                 </ul>
+                <div className='login'>
+                    <Link onClick={login} className='login-a'>Login</Link>
+                </div>
                 <div class="avatar-container">
                     <img src={Avatar} alt="Foto de perfil" class="avatar"/>
                 </div>

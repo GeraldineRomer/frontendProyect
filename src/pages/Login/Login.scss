@@ -1,0 +1,32 @@
+@import '../../App.scss';
+
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 30px;
+}
+.btn-div-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    .btn-login{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.forgot-password{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}

@@ -66,6 +66,23 @@ body{
         .toggle{
             display: none;
         }
+        .login{
+            display: flex;
+            position: relative;
+            right: -230px;
+            a{
+                text-decoration: none;
+                &:hover{
+                    cursor: pointer;
+                    color: rgb(243, 243, 255);
+                    border-radius: 10px;
+                }
+            }
+            .login-a{
+                color: #000;
+                font-family: Timeless-Bold;
+            }
+        }
     }
     .content{
         padding-left: 20px;
