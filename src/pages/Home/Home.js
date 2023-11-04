@@ -8,19 +8,24 @@ import { Section3 } from '../../components/Sections/Section3/Section3';
 import { LateralMenu } from '../../components/LateralMenu/LateralMenu';
 import { TraslucentMenu } from '../../components/TraslucentMenu/TraslucentMenu';
 import  SliderComponent  from '../../components/Slider/Slider';
+import {Footer} from '../../components/Footer/Footer'
 
 export const Home = () => {
     const [favorites, setFavorites] = useState([]);
     return (
-        <div class="Home">
-            <Cube />
-            <MenuCube />
-            {/* <TraslucentMenu/> */}
-            <Section1/>
-            <Section2 />
-            <Section3/>
-            <LateralMenu/>
+        <div className="Home">
+            <div className='Content'>
+                <Cube />
+                <MenuCube />
+                {/* <TraslucentMenu/> */}
+                <Section1/>
+                <Section2 />
+                <Section3/>
+                <LateralMenu/>
+                <Footer/>
+            </div>
         </div>
+        
     )
 }
 

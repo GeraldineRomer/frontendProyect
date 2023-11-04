@@ -1,0 +1,78 @@
+/* Estilos generales del footer */
+.Footer {
+  position: absolute;
+  bottom: -1;
+  left: 0;
+  width: 100%; /* Ocupará todo el ancho de la pantalla */
+  background-color: rgb(112, 198, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; /* Espacio interno para contenido del footer */
+}
+
+/* Estilos para la sección de ubicación */
+.Location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los iconos SVG en la sección de ubicación */
+.Location .Svg {
+  height: 40px;
+  width: 40px;
+}
+
+/* Estilos para la sección de redes sociales */
+.SocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los iconos de Facebook en la sección de redes sociales */
+.SocialMedia .Facebook {
+  height: 55px;
+  width: 55px;
+}
+
+/* Estilos para los iconos SVG en la sección de redes sociales */
+.SocialMedia .Svg {
+  height: 40px;
+  width: 40px;
+}
+
+/* Estilos para la sección de política de privacidad */
+.Privacy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los enlaces de política de privacidad en la sección de política de privacidad */
+.Privacy .Link {
+  color: #007BFF;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Estilos para el logotipo en la sección de política de privacidad */
+.Privacy .Logo {
+  height: 80px;
+  width: 70px;
+}
+/* Estilos para el botón "Privacy" en la sección de política de privacidad */
+.Privacy .Button {
+  background-color: transparent;
+  border: 2px solid rgb(72, 43, 235); /* Color del borde */
+  color: rgb(72, 43, 235); /* Color del texto */
+  padding: 10px 20px; /* Ajusta el relleno según tus preferencias */
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.Privacy .Button:hover {
+  background-color: rgb(72, 43, 235);
+  color: white; /* Cambia el color del texto al pasar el mouse por encima */
+}
