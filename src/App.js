@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom';
 import allRoutes from './config/routes';
 
