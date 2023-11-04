@@ -1,0 +1,74 @@
+/* Estilos generales del footer */
+.Footer {
+  position: absolute;
+  bottom: -1;
+  left: 0;
+  width: 100%; /* Ocupará todo el ancho de la pantalla */
+  background-color: rgb(112, 198, 255);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px; /* Espacio interno para contenido del footer */
+  z-index: -1;
+}
+
+/* Estilos para la sección de ubicación */
+.Location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los iconos SVG en la sección de ubicación */
+.Location .Svg {
+  height: 40px;
+  width: 40px;
+}
+
+/* Estilos para la sección de redes sociales */
+.SocialMedia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Estilos para los iconos de Facebook en la sección de redes sociales */
+.SocialMedia .Facebook {
+  height: 55px;
+  width: 55px;
+}
+
+/* Estilos para los iconos SVG en la sección de redes sociales */
+.SocialMedia .Svg {
+  height: 40px;
+  width: 40px;
+}
+
+/* Estilos para la sección de política de privacidad */
+.Privacy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .Logo{
+    height: 80px;
+  width: 70px;
+  }
+  .conf-button{
+    .privacy-button{
+      margin: 10px;
+      font-size: 15px;
+      background-color: rgb(72, 43, 235);
+      color: #c4dbfd;
+      border-radius: 2px;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-color: rgb(72, 43, 235);
+      border-radius: 10px;
+      right: 120px;
+      top: 60px;
+    }
+  }
+}
+
+
+
