@@ -30,7 +30,11 @@ export const Footer = () => {
                 <img src={Twitter} alt='Twitter' className='Svg'/>
             </div>
             <div className='Privacy'>
-                <button ClassName="Button" onClick={privacy}>Politica de privacidad y de datos</button>
+                <div className='conf-button'>
+                    <button className="privacy-button" onClick={privacy}>
+                        Politica de privacidad y de datos
+                    </button>
+                </div>
                 <img src = {UamLogo} alt="UamLogo" className='Logo'/>
             </div>    
         </div>
