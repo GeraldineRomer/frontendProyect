@@ -65,7 +65,7 @@ export const MenuCube = () => {
                         </Link>
                     </li>
                 </ul>
-                <div className='login'>
+                <div className='login-menu'>
                     <Link onClick={login} className='login-a'>Login</Link>
                 </div>
                 <div class="avatar-container">

@@ -63,21 +63,19 @@ body{
         .toggle{
             display: none;
         }
-        .login{
+        .login-menu{
             display: flex;
             position: relative;
             right: -230px;
-            a{
+            .login-a{
+                color: #272C44;
+                font-family: Timeless-Bold;
+                font-size: 20px;
                 text-decoration: none;
                 &:hover{
                     cursor: pointer;
                     color: #E4EAF5;
                 }
-            }
-            .login-a{
-                color: #272C44;
-                font-family: Timeless-Bold;
-                font-size: 20px;
             }
         }
     }
