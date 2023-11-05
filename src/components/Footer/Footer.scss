@@ -3,12 +3,11 @@
   position: absolute;
   bottom: -1;
   left: 0;
-  width: 100%; /* Ocupará todo el ancho de la pantalla */
+  width: 97.3%; 
   background-color: rgb(112, 198, 255);
-  border-radius: 5px;
   display: flex;
   justify-content: space-around;
-  padding: 20px; /* Espacio interno para contenido del footer */
+  padding: 20px; 
   z-index: -1;
 }
 
