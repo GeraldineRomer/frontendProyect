@@ -7,7 +7,8 @@ import Facebook from '../../assets/svg/facebook-svgrepo-com.svg'
 import Instagram from '../../assets/svg/instagram-round-svgrepo-com.svg'
 import Linkedin from '../../assets/svg/linkedin-round-svgrepo-com.svg'
 import UamLogo from '../../assets/img/logo-removebg-preview.png'
-import Contact from'../../assets/svg/contact-request-svgrepo-com.svg'
+import Contact from '../../assets/svg/contact-request-svgrepo-com.svg'
+import { Grid } from '@mui/material'
 
 
 export const Footer = () => {
@@ -17,26 +18,38 @@ export const Footer = () => {
     }
     return (
         <div className='Footer'>
-            <div className = 'Location'>
-                Ubicacion y contacto:
-                <img src={Location} alt="Location" className='Svg'/>
-                <img src={Contact} alt="Contact" className='Svg'/>
-            </div>
-            <div className='SocialMedia'>
-                Redes sociales:
-                <img src={Instagram} alt='Instagram' className='Svg'/>
-                <img src={Facebook} alt='Facebook' className='Facebook'/>
-                <img src={Linkedin} alt='Linkedin' className='Svg'/>
-                <img src={Twitter} alt='Twitter' className='Svg'/>
-            </div>
-            <div className='Privacy'>
-                <div className='conf-button'>
-                    <button className="privacy-button" onClick={privacy}>
-                        Politica de privacidad y de datos
-                    </button>
+            <div className='card'>
+                <div className = 'Location'>
+                    <label>Ubicación y contacto:</label>
+                    <img src={Location} alt="Location" className='Svg' style={{color: '#ECEEF3'}}/>
+                    <img src={Contact} alt="Contact" className='Svg'/>
                 </div>
-                <img src = {UamLogo} alt="UamLogo" className='Logo'/>
-            </div>    
+                <div className='SocialMedia'>
+                    <label>Redes sociales:</label>
+                    <Grid container spacing={1}>
+                        <Grid item xs={6} md={3}>
+                            <img src={Instagram} alt='Instagram' className='Svg'/>
+                        </Grid>
+                        <Grid item xs={6} md={3}>
+                            <img src={Facebook} alt='Facebook' className='Facebook'/>
+                        </Grid>
+                        <Grid item xs={6} md={3}>
+                            <img src={Linkedin} alt='Linkedin' className='Svg'/>
+                        </Grid>
+                        <Grid item xs={6} md={3}>
+                            <img src={Twitter} alt='Twitter' className='Svg'/>
+                        </Grid>
+                    </Grid>
+                </div>
+                <div className='Privacy'>
+                    <img src = {UamLogo} alt="UamLogo" className='Logo'/>
+                    <div className='conf-button'>
+                        <label className="privacy-button" onClick={privacy}>
+                            Politica de privacidad y de datos
+                        </label>
+                    </div>
+                </div>    
+            </div>
         </div>
     )
 }

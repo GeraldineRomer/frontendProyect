@@ -13,7 +13,7 @@ body{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: #dbcdfd;
+        background: linear-gradient(to bottom, #727191, #3a456ef1);
         padding: 10px 20px;
         ul{
             padding: 0;
@@ -27,18 +27,15 @@ body{
                 a{
                     font-size: 20px;
                     font-weight: 600;
-                    color: #000;
+                    color: #E4EAF5;
                     text-decoration: none;
                     padding: 5px 10px;
                     transition: background-color 0.3s;
                     &:hover{
-                        color: rgb(243, 243, 255);
-                        background-color: rgba(140, 217, 248, 0.986);
-                        border-radius: 20px;
+                        color: #272C44;
                         cursor: pointer;
                     }
                     &:active{
-                        color: rgba(59, 89, 255, 0.986);
                         font-weight: 700;
                         &::after{
                             background-color: #bebbbbc9;
@@ -59,7 +56,7 @@ body{
                 max-width: 60px;
                 height: auto;
                 border-radius: 50%;
-                border: 2px solid #9c9c9c;
+                border: 2px solid #272C44;
                 margin-left: 20px;
             }
         }
@@ -74,13 +71,13 @@ body{
                 text-decoration: none;
                 &:hover{
                     cursor: pointer;
-                    color: rgb(243, 243, 255);
-                    border-radius: 10px;
+                    color: #E4EAF5;
                 }
             }
             .login-a{
-                color: #000;
+                color: #272C44;
                 font-family: Timeless-Bold;
+                font-size: 20px;
             }
         }
     }
