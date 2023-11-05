@@ -10,48 +10,50 @@
         height: 400px;
         bottom: 60px;
         position: relative;
-        margin-left: 250px;
+        margin-left: 150px;
     }
     
     .title {
         display: flex;
-        align-items: start;
-        justify-content: center;
+        align-items: flex-start;
         margin: 10px;
         font-size: 20px;
         font-weight: bold;
         position: relative;
-        right: 120px;
-        top: 60px;
+        right: 130px;
+        top: -14px;
+        font-size: 30px;
     }
 
     .subtitle {
         display: flex;
-        align-items: center;
-        justify-content: center;
+        align-items: start;
         margin: 10px;
         font-size: 15px;
         position: relative;
-        right: 120px;
-        top: 60px;
+        right: 130px;
+        top: -14px;
+        font-size: 17px;
     }
 
     .conf-button {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
+        top: -60px;
         .button-more {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 10px;
             font-size: 15px;
-            background-color: rgb(72, 43, 235);
-            color: #c4dbfd;
+            background: linear-gradient(to right, #340665, #3B3F98);
+            color: #ECEEF3;
             border-radius: 2px;
             padding: 10px 20px;
             cursor: pointer;
-            border-color: rgb(72, 43, 235);
+            border: none;
             border-radius: 10px;
             position: relative;
             right: 120px;
@@ -63,21 +65,26 @@
 button.slick-arrow.slick-next::before {
     font-size: 55px;
     position: absolute;
-    right: 0;
-    color: rgb(72, 43, 235);
+    right: -60px;
+    color: #340665;
 }
 
 button.slick-arrow.slick-prev::before {
     font-size: 55px;
     position: absolute;
-    left: 0;
-    color: rgb(72, 43, 235);
+    left: -60px;
+    color: #340665;
 }
 
 ul.slick-dots {
     bottom: -50px;
-    color: #fff;
+    color: #340665 ;
+
 }
+
+li.slick-active > button::before {
+    color: #340665 !important;
+} 
 
 .button-fav-group{
     display: flex;
@@ -88,6 +95,6 @@ ul.slick-dots {
         margin: 5px;
         width: 50px;
         height: 50px;
-        color: rgb(139,134,243);
+        color: #1F2047;
     }
 }

@@ -10,15 +10,16 @@ import { Fab, Grid } from '@mui/material';
 import { Add, Star } from '@mui/icons-material';
 import { useFavorites } from '../FavoriteList/FavoriteList';
 import { useAdds } from '../AddList/AddList';
+import '../../App.scss';
 
 const style = {
-    position: 'fixed',
+    position: 'absolute',
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: 650,
     bgcolor: 'background.paper',
-    border: '2px solid #000',
+    border: '2px solid #707EE4',
     boxShadow: 24,
     p: 4,   
     justifyContent: 'center',
@@ -26,8 +27,12 @@ const style = {
     display: 'flex',
     flexDirection: 'column',
     borderRadius: '10px',
-    backgroundColor: 'rgb(190, 183, 230)',
-    borderColor: 'rgb(131, 112, 233)',
+    background: 'linear-gradient(to right,#45488D,#31356F)',
+    borderColor: '#707EE4',
+    overflowY: 'auto', // Agrega una barra de desplazamiento vertical
+    maxHeight: '80vh',
+    maxWidth: '80vw',
+    fontFamily: 'Timeless'
 };
 
 const SliderComponent = ({ noticias }) => {
@@ -37,7 +42,7 @@ const SliderComponent = ({ noticias }) => {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 4000
     };
 
@@ -99,21 +104,21 @@ const SliderComponent = ({ noticias }) => {
         >
             <Box sx={style}>
             {selectedNotice && (
-                <div>
-                <Typography id="modal-modal-title" variant="h6" component="h2" style={{ textAlign: 'center' ,  fontWeight: 'bold' , marginBottom:'40px'}} >
-                    {selectedNotice.title}
-                </Typography>
-                <img
-                    src={selectedNotice.image}
-                    alt={selectedNotice.title}
-                    style={{ width: '400px', height: 'auto', borderRadius: '5px' , boxShadow:'0 0 10px rgba(0, 0, 0, 0.2)'}}
-                />
-                <Typography id="modal-modal-subtitle" variant="h6" component="h2" style={{ textAlign: 'center' , margin:'10px'}}>
-                    {selectedNotice.subtitle}
-                </Typography>
-                <Typography id="modal-modal-description" sx={{ mt: 2 }} style={{ textAlign: 'center' , margin:'10px'}}>
-                    {selectedNotice.description}
-                </Typography>
+                <div style={{borderRadius: '10px'}}>
+                    <Typography id="modal-modal-title" variant="h6" component="h2" style={{ textAlign: 'center' ,  fontWeight: 'bold' , marginBottom:'20px', marginTop: '60px', fontFamily: 'Timeless-Bold', color: '#E3ECFC'}} >
+                        {selectedNotice.title}
+                    </Typography>
+                    <img
+                        src={selectedNotice.image}
+                        alt={selectedNotice.title}
+                        style={{ width: '400px', height: 'auto', borderRadius: '5px' , boxShadow:'0 0 10px rgba(0, 0, 0, 0.2)', justtifyContent: 'center', position: 'relative', left: '20%', marginBottom:'15px'}}
+                    />
+                    <Typography id="modal-modal-subtitle" variant="h6" component="h2" style={{ textAlign: 'center' , margin:'5px', fontSize:'13px', fontFamily: 'Timeless', fontStyle: 'italic', fontWeight: 'lighter',  color: '#CCDAF9'}}>
+                        {selectedNotice.subtitle}
+                    </Typography>
+                    <Typography id="modal-modal-description" sx={{ mt: 2 }} style={{ textAlign: 'justify' , margin:'5px', fontSize:'15px', fontFamily: 'Timeless',  color: '#CCDAF9'}}>
+                        {selectedNotice.description}
+                    </Typography>
                     <div className="button-fav-group">
                         <Fab className="btn-icon" color="" aria-label="Favorite icon" onClick={() => handleAddToFavorite(selectedNotice)}>
                             <Star/>

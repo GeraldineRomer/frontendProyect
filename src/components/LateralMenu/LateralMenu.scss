@@ -5,7 +5,7 @@
     flex-direction: column;
     display: flex;
     z-index: 100;
-    width: 70px;
+    width: 50px;
     height: 250px;
     position: fixed;
     top: 200px;
@@ -13,7 +13,7 @@
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
 
-    background-color:#dbcdfdad ;
+    background-color:#a0a2bdef ;
     li {
         list-style: none;
     }
@@ -24,10 +24,10 @@ ul{
 .svg_icon{
     margin: 20px 0 20px 0;
     height: 40px;
-    width: auto;
-    fill: rgba(87, 68, 252, 0.986);
+    width: 40px;
+    fill: #2E2E38;
     &:hover{
-        fill: rgb(249, 249, 255);
+        fill: #C7CBDA;
         cursor: pointer;
     }
 }
